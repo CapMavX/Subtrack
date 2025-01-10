@@ -1,5 +1,5 @@
 import Expenses from '@/Mycomponents/expenses'
-import Hero from '@/Mycomponents/hero'
+
 import Sidebar from '@/Mycomponents/sidebar'
 import Spending from '@/Mycomponents/spending'
 import React from 'react'
