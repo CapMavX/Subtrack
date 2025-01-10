@@ -7,7 +7,7 @@ import { CiLogin } from "react-icons/ci";
 
 export default function Sidebar() {
   return (
-    <div className=' fixed w-[319px] mb-0 h-full shadow-lg text-center  flex flex-col gap-[60px] bg-[white] items-center justify-center '>
+    <div className='w-[319px]  h-screen shadow-2xl text-center  flex flex-col gap-[60px] bg-[white] items-center justify-center '>
         <h2 className='w-[210px] h-[49px] font-[Montserrat] font-[700] mt-[50px] text-[40px] leading-[48.76px] ml-[40px]  '>Sub<span className='text-[Blue]'>Trackr</span></h2>
         <div className='w-[239px] h-fit flex flex-col  gap-[15px]'>
                 <div className='w-[239px] h-[60px]  ml-[40px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] text-center'><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <RxDashboard size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Dashboard</p></div></a></div>
