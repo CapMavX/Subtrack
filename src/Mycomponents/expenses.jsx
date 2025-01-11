@@ -12,8 +12,7 @@ function Expenses() {
       
 
       </div>
-      <Charts2/>
-       
+      
       
         
            

@@ -15,7 +15,8 @@ function Spending() {
       
 
       </div>
-      <Charts/>
+      
+      
        
       
         
