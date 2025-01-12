@@ -5,17 +5,18 @@ import { GrTransaction } from "react-icons/gr";
 import { MdOutlineAccountCircle } from "react-icons/md"
 import { CiLogin } from "react-icons/ci";
 
+
 export default function Sidebar() {
   return (
-    <div className='w-[319px]  h-screen shadow-2xl text-center  flex flex-col gap-[60px] bg-[white] items-center justify-center '>
-        <h2 className='w-[210px] h-[49px] font-[Montserrat] font-[700] mt-[50px] text-[40px] leading-[48.76px] ml-[40px]  '>Sub<span className='text-[Blue]'>Trackr</span></h2>
-        <div className='w-[239px] h-fit flex flex-col  gap-[15px]'>
-                <div className='w-[239px] h-[60px]  ml-[40px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] text-center'><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <RxDashboard size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Dashboard</p></div></a></div>
-                <div className='w-[239px] h-[60px]  ml-[40px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white]'><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <IoIosAddCircleOutline  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Add new</p></div></a></div>
-                <div className='w-[239px] h-[60px]  ml-[40px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] '><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <GrTransaction  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Transactions</p></div></a></div>
-                <div className='w-[239px] h-[60px]  ml-[40px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] '><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <MdOutlineAccountCircle  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Account</p></div></a></div>
+    <div className='w-[319px]  h-full shadow-2xl text-center  flex flex-col gap-[60px] bg-[white] items-center'>
+        <h2 className='w-[210px] h-[49px] font-[Montserrat] font-[700]  text-[40px] leading-[48.76px]  mt-[40px]  '>Sub<span className='text-[Blue]'>Trackr</span></h2>
+        <div className='w-[239px] h-fit flex flex-col  gap-[15px] content-center justify-center'>
+                <div className='w-[239px] h-[60px]  rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] text-center'><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <RxDashboard size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Dashboard</p></div></a></div>
+                <div className='w-[239px] h-[60px]  rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white]'><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <IoIosAddCircleOutline  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Add new</p></div></a></div>
+                <div className='w-[239px] h-[60px]  rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] '><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <GrTransaction  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] ml-[18px] '>Transactions</p></div></a></div>
+                <div className='w-[239px] h-[60px] rounded-[24px] p-[8px] gap-[8px] flex  hover:bg-[#0085FF] text-[black] hover:text-[white] '><a href="/home"><div className='w-[190px] items-center h-[32px] flex flex-row gap-[24px] mt-[5px] '> <MdOutlineAccountCircle  size={24}  className=' mt-[2px]' /> <p className='w-[120px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Account</p></div></a></div>
         </div>
-        <div className='w-[200px]   h-[136px] flex flex-col gap-[55px]  '>
+        <div className='w-[200px]   h-[136px] flex flex-col gap-[55px]   '>
             <div className='w-[300px] h-[32px] flex flex-row gap-[24px]'>
             <label class="relative inline-flex items-center cursor-pointer">
   <input type="checkbox" class="sr-only peer" />
@@ -25,8 +26,9 @@ export default function Sidebar() {
     <p className='w-[186px] h-[29px] font-[400] text-[24px] font-[Montserrat] leading-[29.26px] '>Switch Account</p>
 
             </div>
-            <div className='w-[200px] text-center  h-[32px] flex flex-row gap-[24px]'><CiLogin size={28} /><p className='w-[93px] h-[29px] font-[Montserrat] font-[400] text-[24px] leading-[29.26px] ml-[22px]'>Log out</p></div>
+            <div className='w-[200px] text-center  h-[32px] flex flex-row  gap-[24px]'><CiLogin size={28} /><p className='w-[93px] h-[29px] font-[Montserrat] font-[400] text-[24px] leading-[29.26px] ml-[22px]'>Log out</p></div>
         </div>
+        
     </div>
   )
 }

@@ -17,34 +17,29 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-
 const chartData = [
-  { month: "Jan", desktop: 4000 ,  mobile: 4000 },
-  { month: "Feb", desktop: 2000, mobile: 6000 },
-  { month: "Mar", desktop: 6000 , mobile: 2000 },
-  { month: "Apr", desktop: 3000 , mobile: 5000 },
-  { month: "May", desktop: 4000 ,  mobile: 4000},
-  { month: "Jun",  desktop: 4000 , mobile: 4000 },
-]
+    { month: "Jan",  mobile: 6000 },
+    { month: "Feb", mobile: 7000 },
+    { month: "Mar", mobile: 8000 },
+    { month: "Apr", mobile: 6000 },
+    { month: "May",  mobile: 7000 },
+    { month: "Jun",  mobile: 8000 },
+  ]
+  
+  const chartConfig = {
+   
+    mobile: {
+      label: "Price",
+      color: "#7B61FF",
+    },
+  }
 
-const chartConfig = {
- desktop: {
-  label: "Bills",
-  color: "#7B61FF",
-
- },
-  mobile: {
-    label: "Food",
-    color: "#7B61FF",
-  },
-}
-
-export default function BarChartMultiple() {
+export default function MyExpenses() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="pb-4">
-        <CardTitle className="font-[Montserrat] text-[32px] font-[700] leading-[39.01px]">$48000</CardTitle>
-        <CardDescription className="text-[12px] font-[Montserrat] leading-[14.63px] font-[300]">last 6 months</CardDescription>
+        <CardTitle className="font-[Montserrat] text-[32px] font-[700] leading-[39.01px]">$8000</CardTitle>
+        <CardDescription className="text-[12px] font-[Montserrat] leading-[14.63px] font-[300]">per month</CardDescription>
       </CardHeader>
       <CardContent className="pb-4">
         <ChartContainer config={chartConfig} className="h-[200px]">
@@ -67,7 +62,7 @@ export default function BarChartMultiple() {
           </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
-    
+     
     </Card>
   )
 }
