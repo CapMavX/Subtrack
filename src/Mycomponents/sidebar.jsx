@@ -4,6 +4,7 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 import { GrTransaction } from "react-icons/gr";
 import { MdOutlineAccountCircle } from "react-icons/md"
 import { CiLogin } from "react-icons/ci";
+import capmavx from"../assets/capmavx.jpg"
 
 
 export default function Sidebar() {
@@ -28,6 +29,7 @@ export default function Sidebar() {
             </div>
             <div className='w-[200px] text-center  h-[32px] flex flex-row  gap-[24px]'><CiLogin size={28} /><p className='w-[93px] h-[29px] font-[Montserrat] font-[400] text-[24px] leading-[29.26px] ml-[22px]'>Log out</p></div>
         </div>
+      <img src={capmavx} alt="" className='w-[85px] h-[85px] rounded-[50px] mt-[-30px] '  />
         
     </div>
   )
