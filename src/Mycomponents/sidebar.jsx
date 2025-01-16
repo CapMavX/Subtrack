@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RxDashboard } from "react-icons/rx";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { GrTransaction } from "react-icons/gr";
@@ -7,6 +7,8 @@ import { CiLogin } from "react-icons/ci";
 
 
 export default function Sidebar() {
+
+
   return (
     <div className='w-[319px]  h-full shadow-2xl text-center  flex flex-col gap-[60px] bg-[white] items-center'>
         <h2 className='w-[210px] h-[49px] font-[Montserrat] font-[700]  text-[40px] leading-[48.76px]  mt-[40px]  '>Sub<span className='text-[Blue]'>Trackr</span></h2>
